@@ -1,0 +1,51 @@
+.footer-dark {
+  background: linear-gradient(135deg, #0b3d2e, #000);
+}
+
+/* Headings underline glow */
+.footer-dark h5 {
+  position: relative;
+}
+
+.footer-dark h5::after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background: #28a745;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 5px;
+}
+
+/* Links */
+.footer-dark .footer-li a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-dark .footer-li a:hover,
+.footer-dark .footer-li a.active {
+  color: #fff;
+  padding-left: 8px;
+}
+
+/* Contact boxes */
+.footer-dark .contact-box,
+.footer-dark .bg-opacity-10 {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Social buttons */
+.footer-dark .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-dark .btn-outline-light:hover {
+  background: #28a745;
+  border-color: #28a745;
+}
+.footer-bottom {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+}

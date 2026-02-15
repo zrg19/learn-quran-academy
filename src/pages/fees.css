@@ -1,0 +1,33 @@
+.card-header {
+  font-size: 1.1rem;
+}
+
+.table-bordered th,
+.table-bordered td {
+  vertical-align: middle;
+}
+
+.bg-primary {
+  background-color: #3a7bd5 !important; /* blue like screenshot */
+}
+
+.btn-light {
+  font-weight: 600;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.7rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+}
+
+.rounded-circle {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
