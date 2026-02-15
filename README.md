@@ -1,1 +1,1 @@
-Learning Hub
+Learning Hub Academy
