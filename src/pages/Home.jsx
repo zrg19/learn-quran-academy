@@ -1,8 +1,21 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 
 const Home = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    name: "IqraHub Academy",
+    description:
+      "Online Quran classes in Canada for kids and adults. Learn Quran reading, Tajweed, memorization (Hifz) and translation with qualified male and female teachers.",
+    url: "https://iqrahubacademy.com/",
+    logo: "https://iqrahubacademy.com/q-logo.jpg",
+    areaServed: "CA",
+    sameAs: [],
+  };
+
   const cardsData = [
     {
       title: "Noorani Qaida",
@@ -77,6 +90,14 @@ const Home = () => {
 
   return (
     <>
+      <SEO
+        title="Online Quran Classes in Canada for Kids & Adults"
+        description="Learn Quran online with certified teachers at IqraHub Academy. Quran reading with Tajweed, memorization (Hifz), translation and Islamic studies for kids and adults in Canada. Female teachers available. Two days free trial."
+        keywords="online Quran classes, learn Quran online, Quran with Tajweed, Quran memorization, Hifz, Noorani Qaida, female Quran teachers, Quran classes Canada, Islamic studies, IqraHub Academy"
+        canonical="https://iqrahubacademy.com/"
+        jsonLd={jsonLd}
+      />
+
       {/* ===== CAROUSEL ===== */}
       <div
         id="carouselExampleCaptions"
